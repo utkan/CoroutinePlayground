@@ -13,6 +13,9 @@ repositories {
 }
 
 dependencies {
+//    def coroutines_version = "1.3.9"
+    implementation ("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.3.9")
+
     testImplementation(kotlin("test-junit"))
 }
 
