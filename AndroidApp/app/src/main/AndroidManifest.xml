@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    android:targetSandboxVersion="1"
     package="io.github.coroutineusecases">
 
     <application
+        android:usesCleartextTraffic="true"
+        android:name=".CoroutineUsecasesOnAndroidApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -21,6 +24,10 @@
 
         <activity
             android:name=".usecases.coroutines.usecase1.PerformSingleNetworkRequestActivity"
+            android:exported="true" />
+
+        <activity
+            android:name=".usecases.coroutines.usecase2.Perform2SequentialNetworkRequestsActivity"
             android:exported="true" />
 
     </application>

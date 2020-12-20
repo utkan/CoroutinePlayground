@@ -4,6 +4,7 @@ package io.github.coroutineusecases.base
 import android.os.Parcelable
 import androidx.appcompat.app.AppCompatActivity
 import io.github.coroutineusecases.usecases.coroutines.usecase1.PerformSingleNetworkRequestActivity
+import io.github.coroutineusecases.usecases.coroutines.usecase2.Perform2SequentialNetworkRequestsActivity
 import kotlinx.android.parcel.Parcelize
 
 @Parcelize
@@ -45,11 +46,11 @@ private val coroutinesUseCases =
             UseCase(
                 useCase1Description,
                 PerformSingleNetworkRequestActivity::class.java
-            ) //,
-//            UseCase(
-//                useCase2Description,
-//                Perform2SequentialNetworkRequestsActivity::class.java
-//            ),
+            ) ,
+            UseCase(
+                useCase2Description,
+                Perform2SequentialNetworkRequestsActivity::class.java
+            )//,
 //            UseCase(
 //                useCase2UsingCallbacksDescription,
 //                SequentialNetworkRequestsCallbacksActivity::class.java
