@@ -11,6 +11,9 @@ import io.github.coroutineusecases.usecases.coroutines.usecase3.PerformNetworkRe
 import io.github.coroutineusecases.usecases.coroutines.usecase4.VariableAmountOfNetworkRequestsActivity
 import io.github.coroutineusecases.usecases.coroutines.usecase5.NetworkRequestWithTimeoutActivity
 import io.github.coroutineusecases.usecases.coroutines.usecase6.RetryNetworkRequestActivity
+import io.github.coroutineusecases.usecases.coroutines.usecase7.TimeoutAndRetryActivity
+import io.github.coroutineusecases.usecases.coroutines.usecase7.callbacks.TimeoutAndRetryCallbackActivity
+import io.github.coroutineusecases.usecases.coroutines.usecase7.rx.TimeoutAndRetryRxActivity
 import kotlinx.android.parcel.Parcelize
 
 @Parcelize
@@ -67,24 +70,22 @@ private val coroutinesUseCases =
             ), UseCase(
                 useCase4Description,
                 VariableAmountOfNetworkRequestsActivity::class.java
-            ),UseCase(
+            ), UseCase(
                 useCase5Description,
                 NetworkRequestWithTimeoutActivity::class.java
-            ),UseCase(
+            ), UseCase(
                 useCase6Description,
                 RetryNetworkRequestActivity::class.java
+            ), UseCase(
+                useCase7Description,
+                TimeoutAndRetryActivity::class.java
+            ), UseCase(
+                useCase7UsingCallbacksDescription,
+                TimeoutAndRetryCallbackActivity::class.java
+            ), UseCase(
+                useCase7UsingRxDescription,
+                TimeoutAndRetryRxActivity::class.java
             )
-//           , UseCase(
-//                useCase7Description,
-//                TimeoutAndRetryActivity::class.java
-//            ),
-//            UseCase(
-//                useCase7UsingCallbacksDescription,
-//                TimeoutAndRetryCallbackActivity::class.java
-//            ), UseCase(
-//                useCase7UsingRxDescription,
-//                TimeoutAndRetryRxActivity::class.java
-//            ),
 //            UseCase(
 //                useCase8Description,
 //                RoomAndCoroutinesActivity::class.java

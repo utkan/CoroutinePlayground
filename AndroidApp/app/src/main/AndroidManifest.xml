@@ -54,6 +54,18 @@
             android:name=".usecases.coroutines.usecase6.RetryNetworkRequestActivity"
             android:exported="true" />
 
+        <activity
+            android:name=".usecases.coroutines.usecase7.TimeoutAndRetryActivity"
+            android:exported="true" />
+
+        <activity
+            android:name=".usecases.coroutines.usecase7.rx.TimeoutAndRetryRxActivity"
+            android:exported="true" />
+
+        <activity
+            android:name=".usecases.coroutines.usecase7.callbacks.TimeoutAndRetryCallbackActivity"
+            android:exported="true" />
+
     </application>
 
 </manifest>
