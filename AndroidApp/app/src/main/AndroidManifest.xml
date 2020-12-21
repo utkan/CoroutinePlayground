@@ -46,6 +46,10 @@
             android:name=".usecases.coroutines.usecase4.VariableAmountOfNetworkRequestsActivity"
             android:exported="true" />
 
+        <activity
+            android:name=".usecases.coroutines.usecase5.NetworkRequestWithTimeoutActivity"
+            android:exported="true" />
+
     </application>
 
 </manifest>
