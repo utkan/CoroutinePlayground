@@ -50,6 +50,10 @@
             android:name=".usecases.coroutines.usecase5.NetworkRequestWithTimeoutActivity"
             android:exported="true" />
 
+        <activity
+            android:name=".usecases.coroutines.usecase6.RetryNetworkRequestActivity"
+            android:exported="true" />
+
     </application>
 
 </manifest>

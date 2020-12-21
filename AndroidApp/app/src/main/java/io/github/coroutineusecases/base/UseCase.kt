@@ -10,6 +10,7 @@ import io.github.coroutineusecases.usecases.coroutines.usecase2.rx.SequentialNet
 import io.github.coroutineusecases.usecases.coroutines.usecase3.PerformNetworkRequestsConcurrentlyActivity
 import io.github.coroutineusecases.usecases.coroutines.usecase4.VariableAmountOfNetworkRequestsActivity
 import io.github.coroutineusecases.usecases.coroutines.usecase5.NetworkRequestWithTimeoutActivity
+import io.github.coroutineusecases.usecases.coroutines.usecase6.RetryNetworkRequestActivity
 import kotlinx.android.parcel.Parcelize
 
 @Parcelize
@@ -69,12 +70,11 @@ private val coroutinesUseCases =
             ),UseCase(
                 useCase5Description,
                 NetworkRequestWithTimeoutActivity::class.java
+            ),UseCase(
+                useCase6Description,
+                RetryNetworkRequestActivity::class.java
             )
-//            ,UseCase(
-//                useCase6Description,
-//                RetryNetworkRequestActivity::class.java
-//            ),
-//            UseCase(
+//           , UseCase(
 //                useCase7Description,
 //                TimeoutAndRetryActivity::class.java
 //            ),
