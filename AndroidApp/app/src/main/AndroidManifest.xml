@@ -34,6 +34,14 @@
             android:name=".usecases.coroutines.usecase2.callbacks.SequentialNetworkRequestsCallbacksActivity"
             android:exported="true" />
 
+        <activity
+            android:name=".usecases.coroutines.usecase2.rx.SequentialNetworkRequestsRxActivity"
+            android:exported="true" />
+
+        <activity
+            android:name=".usecases.usecase3.PerformNetworkRequestsConcurrentlyActivity"
+            android:exported="true" />
+
     </application>
 
 </manifest>
