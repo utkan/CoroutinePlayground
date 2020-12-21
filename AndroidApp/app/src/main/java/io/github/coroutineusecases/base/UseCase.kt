@@ -7,7 +7,7 @@ import io.github.coroutineusecases.usecases.coroutines.usecase1.PerformSingleNet
 import io.github.coroutineusecases.usecases.coroutines.usecase2.Perform2SequentialNetworkRequestsActivity
 import io.github.coroutineusecases.usecases.coroutines.usecase2.callbacks.SequentialNetworkRequestsCallbacksActivity
 import io.github.coroutineusecases.usecases.coroutines.usecase2.rx.SequentialNetworkRequestsRxActivity
-import io.github.coroutineusecases.usecases.usecase3.PerformNetworkRequestsConcurrentlyActivity
+import io.github.coroutineusecases.usecases.coroutines.usecase3.PerformNetworkRequestsConcurrentlyActivity
 import kotlinx.android.parcel.Parcelize
 
 @Parcelize
