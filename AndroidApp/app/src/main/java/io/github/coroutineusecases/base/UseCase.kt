@@ -8,6 +8,7 @@ import io.github.coroutineusecases.usecases.coroutines.usecase2.Perform2Sequenti
 import io.github.coroutineusecases.usecases.coroutines.usecase2.callbacks.SequentialNetworkRequestsCallbacksActivity
 import io.github.coroutineusecases.usecases.coroutines.usecase2.rx.SequentialNetworkRequestsRxActivity
 import io.github.coroutineusecases.usecases.coroutines.usecase3.PerformNetworkRequestsConcurrentlyActivity
+import io.github.coroutineusecases.usecases.coroutines.usecase4.VariableAmountOfNetworkRequestsActivity
 import kotlinx.android.parcel.Parcelize
 
 @Parcelize
@@ -58,16 +59,14 @@ private val coroutinesUseCases =
             ), UseCase(
                 useCase2UsingRxDescription,
                 SequentialNetworkRequestsRxActivity::class.java
-            ),
-            UseCase(
+            ), UseCase(
                 useCase3Description,
                 PerformNetworkRequestsConcurrentlyActivity::class.java
-            ),
-//            UseCase(
-//                useCase4Description,
-//                VariableAmountOfNetworkRequestsActivity::class.java
-//            ),
-//            UseCase(
+            ), UseCase(
+                useCase4Description,
+                VariableAmountOfNetworkRequestsActivity::class.java
+            )
+//            ,UseCase(
 //                useCase5Description,
 //                NetworkRequestWithTimeoutActivity::class.java
 //            ),

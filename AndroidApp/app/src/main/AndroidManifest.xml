@@ -39,7 +39,11 @@
             android:exported="true" />
 
         <activity
-            android:name=".usecases.usecase3.PerformNetworkRequestsConcurrentlyActivity"
+            android:name=".usecases.coroutines.usecase3.PerformNetworkRequestsConcurrentlyActivity"
+            android:exported="true" />
+
+        <activity
+            android:name=".usecases.coroutines.usecase4.VariableAmountOfNetworkRequestsActivity"
             android:exported="true" />
 
     </application>
