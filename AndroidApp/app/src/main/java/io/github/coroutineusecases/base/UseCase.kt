@@ -14,6 +14,7 @@ import io.github.coroutineusecases.usecases.coroutines.usecase6.RetryNetworkRequ
 import io.github.coroutineusecases.usecases.coroutines.usecase7.TimeoutAndRetryActivity
 import io.github.coroutineusecases.usecases.coroutines.usecase7.callbacks.TimeoutAndRetryCallbackActivity
 import io.github.coroutineusecases.usecases.coroutines.usecase7.rx.TimeoutAndRetryRxActivity
+import io.github.coroutineusecases.usecases.coroutines.usecase8.RoomAndCoroutinesActivity
 import kotlinx.android.parcel.Parcelize
 
 @Parcelize
@@ -85,12 +86,11 @@ private val coroutinesUseCases =
             ), UseCase(
                 useCase7UsingRxDescription,
                 TimeoutAndRetryRxActivity::class.java
+            ), UseCase(
+                useCase8Description,
+                RoomAndCoroutinesActivity::class.java
             )
-//            UseCase(
-//                useCase8Description,
-//                RoomAndCoroutinesActivity::class.java
-//            ),
-//            UseCase(
+//            ,UseCase(
 //                useCase9Description,
 //                DebuggingCoroutinesActivity::class.java
 //            ),

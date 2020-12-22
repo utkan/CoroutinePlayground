@@ -66,6 +66,10 @@
             android:name=".usecases.coroutines.usecase7.callbacks.TimeoutAndRetryCallbackActivity"
             android:exported="true" />
 
+        <activity
+            android:name=".usecases.coroutines.usecase8.RoomAndCoroutinesActivity"
+            android:exported="true" />
+
     </application>
 
 </manifest>
