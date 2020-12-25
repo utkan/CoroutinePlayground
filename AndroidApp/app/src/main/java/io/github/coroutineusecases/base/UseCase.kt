@@ -15,6 +15,7 @@ import io.github.coroutineusecases.usecases.coroutines.usecase7.TimeoutAndRetryA
 import io.github.coroutineusecases.usecases.coroutines.usecase7.callbacks.TimeoutAndRetryCallbackActivity
 import io.github.coroutineusecases.usecases.coroutines.usecase7.rx.TimeoutAndRetryRxActivity
 import io.github.coroutineusecases.usecases.coroutines.usecase8.RoomAndCoroutinesActivity
+import io.github.coroutineusecases.usecases.coroutines.usecase9.DebuggingCoroutinesActivity
 import kotlinx.android.parcel.Parcelize
 
 @Parcelize
@@ -56,45 +57,56 @@ private val coroutinesUseCases =
             UseCase(
                 useCase1Description,
                 PerformSingleNetworkRequestActivity::class.java
-            ), UseCase(
+            ),
+            UseCase(
                 useCase2Description,
                 Perform2SequentialNetworkRequestsActivity::class.java
-            ), UseCase(
+            ),
+            UseCase(
                 useCase2UsingCallbacksDescription,
                 SequentialNetworkRequestsCallbacksActivity::class.java
-            ), UseCase(
+            ),
+            UseCase(
                 useCase2UsingRxDescription,
                 SequentialNetworkRequestsRxActivity::class.java
-            ), UseCase(
+            ),
+            UseCase(
                 useCase3Description,
                 PerformNetworkRequestsConcurrentlyActivity::class.java
-            ), UseCase(
+            ),
+            UseCase(
                 useCase4Description,
                 VariableAmountOfNetworkRequestsActivity::class.java
-            ), UseCase(
+            ),
+            UseCase(
                 useCase5Description,
                 NetworkRequestWithTimeoutActivity::class.java
-            ), UseCase(
+            ),
+            UseCase(
                 useCase6Description,
                 RetryNetworkRequestActivity::class.java
-            ), UseCase(
+            ),
+            UseCase(
                 useCase7Description,
                 TimeoutAndRetryActivity::class.java
-            ), UseCase(
+            ),
+            UseCase(
                 useCase7UsingCallbacksDescription,
                 TimeoutAndRetryCallbackActivity::class.java
-            ), UseCase(
+            ),
+            UseCase(
                 useCase7UsingRxDescription,
                 TimeoutAndRetryRxActivity::class.java
-            ), UseCase(
+            ),
+            UseCase(
                 useCase8Description,
                 RoomAndCoroutinesActivity::class.java
+            ),
+            UseCase(
+                useCase9Description,
+                DebuggingCoroutinesActivity::class.java
             )
 //            ,UseCase(
-//                useCase9Description,
-//                DebuggingCoroutinesActivity::class.java
-//            ),
-//            UseCase(
 //                useCase10Description,
 //                CalculationInBackgroundActivity::class.java
 //            ),
