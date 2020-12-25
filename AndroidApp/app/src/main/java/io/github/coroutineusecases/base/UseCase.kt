@@ -4,6 +4,7 @@ package io.github.coroutineusecases.base
 import android.os.Parcelable
 import androidx.appcompat.app.AppCompatActivity
 import io.github.coroutineusecases.usecases.coroutines.usecase1.PerformSingleNetworkRequestActivity
+import io.github.coroutineusecases.usecases.coroutines.usecase10.CalculationInBackgroundActivity
 import io.github.coroutineusecases.usecases.coroutines.usecase2.Perform2SequentialNetworkRequestsActivity
 import io.github.coroutineusecases.usecases.coroutines.usecase2.callbacks.SequentialNetworkRequestsCallbacksActivity
 import io.github.coroutineusecases.usecases.coroutines.usecase2.rx.SequentialNetworkRequestsRxActivity
@@ -105,12 +106,11 @@ private val coroutinesUseCases =
             UseCase(
                 useCase9Description,
                 DebuggingCoroutinesActivity::class.java
+            ), UseCase(
+                useCase10Description,
+                CalculationInBackgroundActivity::class.java
             )
 //            ,UseCase(
-//                useCase10Description,
-//                CalculationInBackgroundActivity::class.java
-//            ),
-//            UseCase(
 //                useCase11Description,
 //                CooperativeCancellationActivity::class.java
 //            ),

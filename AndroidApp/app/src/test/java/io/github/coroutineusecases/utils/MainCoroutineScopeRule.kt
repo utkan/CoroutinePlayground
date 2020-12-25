@@ -15,13 +15,13 @@ import org.junit.runner.Description
 
 @ExperimentalCoroutinesApi
 class MainCoroutineScopeRule(
-    private val testDsipatcher: TestCoroutineDispatcher = TestCoroutineDispatcher()
+    internal val testDispatcher: TestCoroutineDispatcher = TestCoroutineDispatcher()
 ) : TestWatcher(),
-    TestCoroutineScope by TestCoroutineScope(testDsipatcher) {
+    TestCoroutineScope by TestCoroutineScope(testDispatcher) {
 
     override fun starting(description: Description?) {
         super.starting(description)
-        Dispatchers.setMain(testDsipatcher)
+        Dispatchers.setMain(testDispatcher)
     }
 
     override fun finished(description: Description?) {
