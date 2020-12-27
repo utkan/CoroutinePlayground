@@ -86,6 +86,10 @@
             android:name=".usecases.coroutines.usecase12.CalculationInSeveralCoroutinesActivity"
             android:exported="true" />
 
+        <activity
+            android:name=".usecases.coroutines.usecase14.ContinueCoroutineWhenUserLeavesScreenActivity"
+            android:exported="true" />
+
     </application>
 
 </manifest>

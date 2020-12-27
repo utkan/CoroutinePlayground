@@ -7,6 +7,7 @@ import io.github.coroutineusecases.usecases.coroutines.usecase1.PerformSingleNet
 import io.github.coroutineusecases.usecases.coroutines.usecase10.CalculationInBackgroundActivity
 import io.github.coroutineusecases.usecases.coroutines.usecase11.CooperativeCancellationActivity
 import io.github.coroutineusecases.usecases.coroutines.usecase12.CalculationInSeveralCoroutinesActivity
+import io.github.coroutineusecases.usecases.coroutines.usecase14.ContinueCoroutineWhenUserLeavesScreenActivity
 import io.github.coroutineusecases.usecases.coroutines.usecase2.Perform2SequentialNetworkRequestsActivity
 import io.github.coroutineusecases.usecases.coroutines.usecase2.callbacks.SequentialNetworkRequestsCallbacksActivity
 import io.github.coroutineusecases.usecases.coroutines.usecase2.rx.SequentialNetworkRequestsRxActivity
@@ -122,10 +123,10 @@ private val coroutinesUseCases =
 //                useCase13Description,
 //                ExceptionHandlingActivity::class.java
 //            ),
-//            UseCase(
-//                useCase14Description,
-//                ContinueCoroutineWhenUserLeavesScreenActivity::class.java
-//            ),
+            ,UseCase(
+                useCase14Description,
+                ContinueCoroutineWhenUserLeavesScreenActivity::class.java
+            ),
 //            UseCase(
 //                useCase15Description,
 //                WorkManagerActivity::class.java

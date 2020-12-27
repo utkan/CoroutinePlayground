@@ -1,21 +1,23 @@
 package io.github.coroutineusecases
 
 import android.app.Application
+import io.github.coroutineusecases.usecases.coroutines.usecase14.AndroidVersionDatabase
+import io.github.coroutineusecases.usecases.coroutines.usecase14.AndroidVersionRepository
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.SupervisorJob
 import timber.log.Timber
 
 class CoroutineUsecasesOnAndroidApplication : Application() {
 
-//    private val applicationScope = CoroutineScope(SupervisorJob())
+    private val applicationScope = CoroutineScope(SupervisorJob())
 
-//    val androidVersionRepository by lazy {
-//        val database = AndroidVersionDatabase.getInstance(applicationContext).androidVersionDao()
-//        AndroidVersionRepository(
-//            database,
-//            applicationScope
-//        )
-//    }
+    val androidVersionRepository by lazy {
+        val database = AndroidVersionDatabase.getInstance(applicationContext).androidVersionDao()
+        AndroidVersionRepository(
+            database,
+            applicationScope
+        )
+    }
 
     override fun onCreate() {
         super.onCreate()
