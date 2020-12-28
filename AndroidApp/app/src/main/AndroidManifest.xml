@@ -87,6 +87,10 @@
             android:exported="true" />
 
         <activity
+            android:name=".usecases.coroutines.usecase13.ExceptionHandlingActivity"
+            android:exported="true" />
+
+        <activity
             android:name=".usecases.coroutines.usecase14.ContinueCoroutineWhenUserLeavesScreenActivity"
             android:exported="true" />
 
