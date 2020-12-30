@@ -4,6 +4,7 @@ import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
+import androidx.recyclerview.widget.RecyclerView
 import kotlinx.coroutines.CancellationException
 import kotlinx.coroutines.CoroutineDispatcher
 import kotlinx.coroutines.Dispatchers
@@ -11,6 +12,7 @@ import kotlinx.coroutines.Job
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
 import kotlinx.coroutines.yield
+import timber.log.Timber
 import java.math.BigInteger
 import kotlin.system.measureTimeMillis
 
@@ -45,6 +47,12 @@ class CooperativeCancellationViewModel(
                 }
             }
         }
+
+        calculationJob?.invokeOnCompletion {
+            if (it is RecyclerView.ViewCacheExtension) {
+                UiState.Error("Calculation was cancelled")
+            }
+        }
     }
 
     // factorial of n (n!) = 1 * 2 * 3 * 4 * ... * n
@@ -61,6 +69,7 @@ class CooperativeCancellationViewModel(
 
                 factorial = factorial.multiply(BigInteger.valueOf(i.toLong()))
             }
+            Timber.d("Calculating Factorial completed")
             factorial
         }
 

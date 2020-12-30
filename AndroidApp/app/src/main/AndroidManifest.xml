@@ -94,6 +94,10 @@
             android:name=".usecases.coroutines.usecase14.ContinueCoroutineWhenUserLeavesScreenActivity"
             android:exported="true" />
 
+        <activity
+            android:name=".usecases.coroutines.usecase15.WorkManagerActivity"
+            android:exported="true" />
+
     </application>
 
 </manifest>
