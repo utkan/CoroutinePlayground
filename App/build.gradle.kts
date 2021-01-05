@@ -17,6 +17,8 @@ dependencies {
     implementation ("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.3.9")
 
     testImplementation(kotlin("test-junit"))
+//    testImplementation(kotlin("kotlinx.coroutines.test"))
+    testImplementation("org.jetbrains.kotlinx:kotlinx-coroutines-test:1.3.9")
 }
 
 tasks.test {
